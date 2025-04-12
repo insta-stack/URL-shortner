@@ -5,7 +5,7 @@ import crypto from "crypto";
 import { link } from "fs";
 
 const __dirname = resolve();
-const PORT = 3006;
+const PORT = process.env.PORT || 3006;
 const DATA_FILE = path.join("data", "links.json");
 
 // Load existing links from file
